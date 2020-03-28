@@ -12,22 +12,4 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/','HomeController@index');
-Route::get('js','HomeController@js');
-// Route::get('/', function () {
-//     return view('home',[
-//         'name'=>'homepage'
-//     ]);
-// });
-Route::get('php', function () {
-    return view('php')->with('name','php page');
-});
-// Route::get('js', function () {
-//     return view('js',[
-//         'data'=>[
-//             'lesson1'=>'this is lesson 1',
-//             'lesson2'=>'this is lesson 2',
-//             'lesson3'=>'this is lesson 3'
-//         ]
-//     ]);
-// });
+Route::get('/','ReceipeController@index');
